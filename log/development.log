@@ -1654,3 +1654,12 @@ ActionController::RoutingError (No route matches [GET] "/posts/1/show"):
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.6ms)
+
+
+Started GET "/posts/1/body" for 99.64.100.77 at 2019-09-19 05:28:55 +0000
+Cannot render console from 99.64.100.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#body as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 15ms (Views: 1.4ms | ActiveRecord: 0.2ms)
